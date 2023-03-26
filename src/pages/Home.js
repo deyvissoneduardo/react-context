@@ -1,4 +1,5 @@
 import { useContext } from "react"
+import ChangeCounter from "../Components/ChangeCounter";
 import { CounterContext } from "../context/CounterContext"
 const Home = () => {
     const {counter} = useContext(CounterContext);
@@ -7,6 +8,7 @@ const Home = () => {
     <div>
         <h1>Home</h1>
         <p>{counter}</p>
+        <ChangeCounter />
     </div>
   )
 }
